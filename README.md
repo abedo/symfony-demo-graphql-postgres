@@ -6,7 +6,11 @@ symfony serve --port=9074
 ```
 
 After creating resolver, e.g. UserResolver
-Queries cn be tested by running HTTP requests (in tests dir/)
+
+Queries can be tested by running HTTP requests (in tests dir/)
+
+tests/Http/overblog_graphql_endpoint.http
+
 And using data from symfony-demo SQLite db:
 
 ```bash
