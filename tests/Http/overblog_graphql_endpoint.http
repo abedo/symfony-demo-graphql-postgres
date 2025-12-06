@@ -1,0 +1,13 @@
+# curl -X POST
+#  -H "Content-Type: application/json"
+#  -d '{"query": "query { hello }"}'
+#  http://127.0.0.1:8000/graphql/
+POST http://127.0.0.1:9074/graphql/
+Content-Type: application/json
+
+{
+    "query": "query { hello }"
+}
+
+###
+
