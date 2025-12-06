@@ -1,0 +1,22 @@
+User:
+    type: 'object'
+    config:
+        description: 'Represents a blog user.'
+        fields:
+            # Pola zdefiniowane w encji App\Entity\User
+            id:
+                type: 'Int!'
+                description: 'The unique ID of the user.'
+            fullName:
+                type: 'String!'
+                description: 'The full name of the user.'
+            username:
+                type: 'String!'
+                description: 'The username (login).'
+            email:
+                type: 'String!'
+                description: 'The email address of the user.'
+
+            # W GraphQL nie powinniśmy nigdy ujawniać hasła (password)
+            # Ani role (roles), jeśli nie jest to wymagane na froncie,
+            # dlatego nie dodajemy ich do definicji typu.

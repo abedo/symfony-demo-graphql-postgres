@@ -1,0 +1,15 @@
+Query:
+    type: 'object'
+    config:
+        description: 'The root query type.'
+        fields:
+            hello:
+                type: 'String!'
+                # Zmień resolve na stałą wartość: 'Hello from GraphQL!'
+                resolve: 'Hello from GraphQL!' # <--- TUTAJ ZMIANA!
+
+            users:
+                type: '[User!]!' # Zwraca tablicę obiektów User, które nie mogą być nullem
+                description: 'Returns a list of all users.'
+                # Wywołuje metodę resolveUsers z serwisu App\Resolver\UserResolver
+                resolve: '@=query("App\\Resolver\\UserResolver::resolveUsers")'
