@@ -1,2 +1,25 @@
 # symfony-demo-graphql-postgres
 Symfony demo application with graphql bundle and postgres db
+
+After creating resolver, e.g. UserResolver
+Queries cn be tested by running HTTP requests (in tests dir/)
+And using data from symfony-demo SQLite db:
+
+```bash
+POST http://127.0.0.1:9074/graphql/
+Content-Type: application/json
+
+{
+    "query": "query { hello }"
+}
+```
+
+The response should be:
+
+```bash
+{
+  "data": {
+    "hello": "Hello from GraphQL!"
+  }
+}
+```
