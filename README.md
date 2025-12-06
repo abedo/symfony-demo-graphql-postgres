@@ -1,6 +1,10 @@
 # symfony-demo-graphql-postgres
 Symfony demo application with graphql bundle and postgres db
 
+```bash
+symfony serve --port=9074
+```
+
 After creating resolver, e.g. UserResolver
 Queries cn be tested by running HTTP requests (in tests dir/)
 And using data from symfony-demo SQLite db:
