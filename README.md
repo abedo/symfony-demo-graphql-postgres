@@ -31,3 +31,6 @@ The response should be:
   }
 }
 ```
+
+GraphQL queries are visible in Profiler
+<img width="1220" height="768" alt="Zrzut ekranu z 2025-12-07 11-24-18" src="https://github.com/user-attachments/assets/0dc34653-1049-4f70-96c9-c85da58b61d0" />
